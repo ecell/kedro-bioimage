@@ -1,0 +1,6 @@
+context_path: kedro_bioimage.run.ProjectContext
+project_name: "kedro-bioimage"
+project_version: "0.16.6"
+package_name: "kedro_bioimage"
+hooks:
+  - kedro_bioimage.hooks.project_hooks
