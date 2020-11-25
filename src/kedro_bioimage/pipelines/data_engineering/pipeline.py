@@ -34,21 +34,22 @@ Delete this when you start working on your own Kedro project.
 
 from kedro.pipeline import Pipeline, node
 
-from .nodes import split_data
+from .nodes import generation
 
 
 def create_pipeline(**kwargs):
     return Pipeline(
         [
             node(
-                split_data,
-                ["example_iris_data", "params:example_test_data_ratio"],
-                dict(
-                    train_x="example_train_x",
-                    train_y="example_train_y",
-                    test_x="example_test_x",
-                    test_y="example_test_y",
-                ),
+                generation, inputs=["params:num_samples"], outputs=None
+#                 split_data,
+#                 ["example_iris_data", "params:example_test_data_ratio"],
+#                 dict(
+#                     train_x="example_train_x",
+#                     train_y="example_train_y",
+#                     test_x="example_test_x",
+#                     test_y="example_test_y",
+#                 ),
             )
         ]
     )

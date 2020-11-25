@@ -36,7 +36,7 @@ from kedro.pipeline import Pipeline
 from kedro.versioning import Journal
 
 from kedro_bioimage.pipelines import data_engineering as de
-from kedro_bioimage.pipelines import data_science as ds
+# from kedro_bioimage.pipelines import data_science as ds
 
 
 class ProjectHooks:
@@ -49,12 +49,13 @@ class ProjectHooks:
 
         """
         data_engineering_pipeline = de.create_pipeline()
-        data_science_pipeline = ds.create_pipeline()
+#         data_science_pipeline = ds.create_pipeline()
 
         return {
             "de": data_engineering_pipeline,
-            "ds": data_science_pipeline,
-            "__default__": data_engineering_pipeline + data_science_pipeline,
+#             "ds": data_science_pipeline,
+#             "__default__": data_engineering_pipeline + data_science_pipeline,
+            "__default__": data_engineering_pipeline,
         }
 
     @hook_impl
