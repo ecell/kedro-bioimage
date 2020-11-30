@@ -2,9 +2,23 @@
 
 ## Overview
 
-This is your new Kedro project, which was generated using `Kedro 0.16.6`.
+This is a Kedro project for bioimage analysis, which was generated using `Kedro 0.16.6`.
 
-Take a look at the [Kedro documentation](https://kedro.readthedocs.io) to get started.
+## How to setup kedro-bioimage environment
+
+1. install miniconda from https://docs.conda.io/en/latest/miniconda.html
+2. Create a new Python virtual environment, called kedro-environment, using conda
+    ```
+    conda create --name kedro-bioimage python=3.7 -y
+    ```
+3. This will create an isolated Python 3.7 environment. To activate it:
+    ```
+    conda activate kedro-bioimage
+    ```
+4. Install dependencies with pip
+    ```
+    pip install -r src/requirements.txt
+    ```
 
 ## Rules and guidelines
 
@@ -14,16 +28,6 @@ In order to get the best out of the template:
 * Make sure your results can be reproduced by following a [data engineering convention](https://kedro.readthedocs.io/en/stable/11_faq/01_faq.html#what-is-data-engineering-convention)
 * Don't commit data to your repository
 * Don't commit any credentials or your local configuration to your repository. Keep all your credentials and local configuration in `conf/local/`
-
-## How to install dependencies
-
-Declare any dependencies in `src/requirements.txt` for `pip` installation and `src/environment.yml` for `conda` installation.
-
-To install them, run:
-
-```
-kedro install
-```
 
 ## How to run your Kedro pipeline
 
