@@ -77,24 +77,14 @@ kedro install
 > Jupyter, JupyterLab, and IPython are already included in the project requirements by default, so once you have run `kedro install` you will not need to take any extra steps before you use them.
 
 ### Jupyter
-To use Jupyter notebooks in your Kedro project, you need to install Jupyter:
 
-```
-pip install jupyter
-```
-
-After installing Jupyter, you can start a local notebook server:
+You can start a local notebook server:
 
 ```
 kedro jupyter notebook
 ```
 
 ### JupyterLab
-To use JupyterLab, you need to install it:
-
-```
-pip install jupyterlab
-```
 
 You can also start JupyterLab:
 
