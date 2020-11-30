@@ -49,3 +49,5 @@ def generation(num_samples):
             true_data.extend([t, key] + list(value) for key, value in infodict['true_data'].items())
         true_data = numpy.array(true_data)
         numpy.save(artifacts / f"true_data{i:03d}.npy", true_data)
+
+

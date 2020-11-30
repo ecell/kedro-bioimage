@@ -39,6 +39,8 @@ from typing import Any, Dict
 import numpy as np
 import pandas as pd
 
+def dummy(aaa: int) -> str:
+    return "aaa"
 
 def train_model(
     train_x: pd.DataFrame, train_y: pd.DataFrame, parameters: Dict[str, Any]

@@ -45,6 +45,7 @@
 
 example_iris_data:
   type: pandas.CSVDataSet
-  filepath: data/01_raw/iris.csv
-
+  filepath: data/01_raw/generation.csv
+  load_args:
+    num_samples: 2
 
