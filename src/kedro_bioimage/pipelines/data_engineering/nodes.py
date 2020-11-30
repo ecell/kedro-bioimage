@@ -35,12 +35,12 @@ from typing import Any, Dict
 
 import pandas as pd
 
-def generation(num_samples):
+def generation(num_samples, num_frames):
     seed = 123
     #num_samples = 5
     exposure_time = 33.0e-3
     interval = 33.0e-3
-    num_frames = 5
+    #num_frames = 5
     Nm = [100, 100, 100]
     Dm = [0.222e-12, 0.032e-12, 0.008e-12]
     transmat = [
