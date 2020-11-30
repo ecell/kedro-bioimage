@@ -15,9 +15,14 @@ This is a Kedro project for bioimage analysis, which was generated using `Kedro 
     ```
     conda activate kedro-bioimage
     ```
-4. Install dependencies with pip
+4. Install dependencies with pip (and install numpy with conda for Windows)
     ```
-    pip install -r src/requirements.txt
+    pip install -r src/requirements.txt --user
+    conda install numpy
+    ```
+5. Remove scopyon example directory
+    ```
+    rm -rf src/scopyon/examples
     ```
 
 ## Rules and guidelines
