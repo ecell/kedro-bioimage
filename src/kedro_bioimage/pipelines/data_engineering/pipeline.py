@@ -41,7 +41,7 @@ def create_pipeline(**kwargs):
     return Pipeline(
         [
             node(
-                generation, inputs=["params:num_samples"], outputs=None
+                generation, inputs=["params:num_samples","params:num_frames"], outputs=None
 #                 split_data,
 #                 ["example_iris_data", "params:example_test_data_ratio"],
 #                 dict(
